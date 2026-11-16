@@ -66,7 +66,7 @@ function FindSite({ setResult }) {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/analyze",
+  `${import.meta.env.VITE_API_URL}/analyze`,
         {
           method: "POST",
           headers: {
