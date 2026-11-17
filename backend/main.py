@@ -9,9 +9,10 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
-        "https://rainwater-harvesting-site-finder-84f286tia.vercel.app"
-    ],
+    "http://localhost:5173",
+    "https://rainwater-harvesting-site-finder-84f286tia.vercel.app",
+    "https://rainwater-harvesting-site-finder.vercel.app"
+],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
